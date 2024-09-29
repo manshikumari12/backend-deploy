@@ -7,7 +7,7 @@ const { FavoriteModel } = require('../model/favorite.model');
 router.post('/favorite/:postId', authenticate, async (req, res) => {
   const { postId } = req.params;
   const { userId } = req; // Correct the typo here
-
+//hjhdhx
   try {
     // Check if the user has already marked the post as a favorite
     const existingFavorite = await FavoriteModel.findOne({ userId, postId });
